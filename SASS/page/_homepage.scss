@@ -1,0 +1,363 @@
+.belleville {
+
+    font-size: 16px;
+    background-color: $grey2;
+    height: 50px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .pin {
+        padding-right: 17px;
+        color: $grey;
+    }
+}
+
+.sectionreserver {
+    background-color: #F6F6F6;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+
+    @media (min-width: 1024px) {
+        padding-bottom: 0;
+        gap: 18px;
+    }
+}
+
+.titrereserver {
+
+    margin: 0;
+    text-align: center;
+    width: 75%;
+
+    @media (min-width: 1024px) {
+        font-size: 40px;
+    }
+}
+
+.decouvrez {
+
+    font-size: 18px;
+    color: $grey;
+    text-align: center;
+    width: 75%;
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+
+.brestaurant {
+    @include explorer;
+
+
+    &:hover {
+        background: $buttongradient2;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
+
+        transition: 1000ms;
+
+    }
+}
+
+.sectionfonctionnement {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    gap: 10px;
+    padding-top: 35px;
+    padding-bottom: 60px;
+
+}
+
+.titrefonctionnement {
+
+    font-size: 24px;
+    padding-bottom: 26px;
+
+}
+
+.divfonctionnement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    width: 95%;
+
+
+
+    @media (min-width: 1024px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+.rond {
+    color: white;
+    border: 1px solid $main-color;
+    border-radius: 24px;
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
+    background-color: $main-color;
+    text-align: center;
+    display: inline-block;
+
+
+}
+
+.iconefonc {
+    color: #7E7E7E;
+
+}
+
+.rectangle {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    border: 1px solid #F6F6F6;
+    border-radius: 20px;
+    background-color: #F6F6F6;
+    height: 72px;
+    width: 85%;
+    font-weight: 500;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+
+
+
+    @media (min-width:768px) {
+        width: 55%;
+    }
+
+    @media (min-width:1024px) {
+        width: 30%;
+    }
+
+
+}
+
+
+.sectionrestaurant {
+
+    background-color: #F6F6F6;
+    padding-top: 35px;
+    padding-bottom: 60px;
+    gap: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titrerestaurant {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 40px;
+
+
+}
+
+.titrefonctionnementrestaurant {
+    position: relative;
+
+    right: 20%;
+
+    @media (min-width:768px) {
+        right: 30%;
+    }
+
+    @media (min-width:1024px) {
+        right: 40%;
+    }
+
+}
+
+.divrestaurant {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 5%;
+    row-gap: 100px;
+    column-gap: 50px;
+
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.articlerestaurant {
+    width: 90%;
+
+    @media (min-width: 1024px) {
+        width: 39%;
+    }
+
+    @media (min-width: 768px) {
+        width: 45%;
+    }
+
+}
+
+.nouveau {
+    color: $green-font;
+    border: 2px solid #99E2D0;
+    background: #99E2D0;
+    width: 25%;
+    height: 29px;
+    line-height: 29px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    position: relative;
+    top: 42px;
+    left: 68%;
+
+    @media (min-width: 1024px) {
+        left: 69%;
+    }
+
+}
+
+.imagem {
+    width: 100%;
+    height: 231px;
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+
+}
+
+.contenucarte {
+    background-color: white;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.titremenucarte {
+    font-size: 18px;
+    padding-left: 13px;
+    padding-top: 15px;
+}
+
+.textecarte {
+    font-size: 17px;
+    padding-top: 5px;
+    padding-left: 13px;
+    padding-bottom: 15px;
+}
+
+.coeurvide {
+    position: relative;
+    top: 20px;
+    left: 90%;
+    font-size: 18px;
+
+    &:hover{
+        font-weight: 900;
+        color:$main-color;
+        transition: 500ms;
+    }
+}
+
+
+.loaderbackground {
+
+    display: block;
+    position: fixed;
+
+
+    animation: loaderbackground 3000ms;
+    animation-fill-mode: forwards;
+    width: 100%;
+    height: 100%;
+    background-color: $grey;
+    z-index: 20;
+
+}
+
+@keyframes loaderbackground {
+
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        z-index: -20;
+    }
+
+}
+
+.loaderbar1::before {
+    content: '';
+    display: block;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-top: -75px;
+    margin-left: -25px;
+    animation: loader linear 2000ms;
+    animation-fill-mode: forwards;
+    width: 50px;
+    height: 150px;
+    background-color: $main-color;
+    z-index: 20;
+}
+
+.loaderbar1::after {
+    content: '';
+    display: block;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-top: -75px;
+    margin-left: 50px;
+    animation: loader linear 1000ms;
+    animation-fill-mode: forwards;
+    width: 50px;
+    height: 150px;
+    background-color: $main-color;
+    z-index: 20;
+}
+
+.loaderbar2 {
+    display: block;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-top: -75px;
+    margin-left: -100px;
+    animation: loader linear 3000ms;
+    animation-fill-mode: forwards;
+    width: 50px;
+    height: 150px;
+    background-color: $main-color;
+    z-index: 1;
+}
+
+@keyframes loader {
+    0% {
+        transform: scaleY(0);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+
+
+    100% {
+        transform: scaleY(0);
+        opacity: 0;
+    }
+}
