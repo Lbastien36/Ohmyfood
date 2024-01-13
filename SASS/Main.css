@@ -519,8 +519,8 @@ a {
   flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 5px;
   overflow: hidden;
+  gap: 5px;
 }
 @media (min-width: 768px) {
   .carte {
@@ -532,12 +532,38 @@ a {
     width: 60%;
   }
 }
-.carte:hover {
-  animation: check;
-}
 
 .titretexte {
   width: 100%;
+  transition: 1000ms;
+}
+.titretexte:hover {
+  width: 81%;
+}
+@media (min-width: 375px) {
+  .titretexte:hover {
+    width: 82%;
+  }
+}
+@media (min-width: 425px) {
+  .titretexte:hover {
+    width: 85%;
+  }
+}
+@media (min-width: 768px) {
+  .titretexte:hover {
+    width: 88%;
+  }
+}
+@media (min-width: 1024px) {
+  .titretexte:hover {
+    width: 87%;
+  }
+}
+@media (min-width: 1440px) {
+  .titretexte:hover {
+    width: 91.2%;
+  }
 }
 
 .check {
@@ -548,7 +574,6 @@ a {
   align-items: center;
   justify-content: center;
   display: flex;
-  margin-left: 10px;
 }
 .check .iconecheck {
   height: 20px;
@@ -561,16 +586,21 @@ a {
   color: #99E2D0;
 }
 
-@keyframes check {}
 .titrecarte {
   font-size: 18px;
   padding-inline-start: 15px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .textecarte2 {
   font-size: 15px;
   padding-inline-start: 15px;
   font-weight: 300;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .prix {
